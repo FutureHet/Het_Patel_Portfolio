@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Het Patel | Software Engineer Portfolio</title>
+    <!-- Google Fonts: Inter & Outfit for Premium Typography -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;500;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dynamic.css">
+    <link rel="stylesheet" href="engine.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="glass">
+        <div class="nav-content">
+            <div class="logo">HET<span>PATEL</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">Intro</a></li>
+                <li><a href="#experience">Impact</a></li>
+                <li><a href="#skills">Stack</a></li>
+                <li><a href="#projects">Engineering</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="contact-icons">
+                <a href="https://linkedin.com/in/het-patel-913877172" target="_blank" title="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/FutureHet" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:het30401@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+15183307379" title="Call Me"><i class="fas fa-phone"></i></a>
+                <a href="mailto:het30401@gmail.com" class="cta-pill">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Micro-Animations -->
+    <section id="hero" class="hero-container">
+        <div class="hero-content">
+            <h1 class="reveal-text">Architecting <span>High-Scale</span> Systems.</h1>
+            <p class="hero-subtitle">Software Engineer specializing in Distributed Systems & AI Infrastructure.
+                Currently optimizing at Goldman Sachs. 3.97 Graduate GPA. Kaggle Top 0.1%.</p>
+            <div class="hero-actions">
+                <a href="#experience" class="btn-primary">Explore My World <i class="fas fa-arrow-down"></i></a>
+                <div class="scroll-label">Interactive 3D Experience Below</div>
+            </div>
+        </div>
+        <div id="hero-bg-canvas"></div> <!-- Future particle effect or blurred glow -->
+    </section>
+
+    <!-- The 3D World Globe Section -->
+    <section id="experience" class="world-section">
+        <div class="section-header">
+            <h2 class="badge">Professional Footprint</h2>
+            <h3>Global Experience Hub</h3>
+            <p class="instruction">Rotate the globe and click on the <span>holographic pillars</span> to deep-dive into
+                each role.</p>
+        </div>
+
+        <div id="globe-container">
+            <!-- Three.js Canvas will be injected here -->
+            <div id="hover-tag" class="hidden">Company Name</div>
+        </div>
+    </section>
+
+    <!-- The Skills Engine: Force-Directed Stack Graph -->
+    <section id="skills" class="skills-section">
+        <div class="section-header">
+            <h2 class="badge">Stack Core</h2>
+            <h3>The Tech Stack Engine</h3>
+            <p class="instruction">Interactive Dependency Graph. <span>Drag & Hover</span> to analyze my architectural
+                depth.</p>
+        </div>
+        <div id="engine-container">
+            <div class="engine-overlay">
+                <div class="engine-status">
+                    <div class="status-dot"></div>
+                    System Online: Distributed Framework Active
+                </div>
+            </div>
+            <!-- Canvas Injected via JS -->
+        </div>
+    </section>
+
+    <!-- Engineering Projects: Horizontal Slider -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <h2 class="badge">Architecture</h2>
+            <h3>Engineering Real-World Solutions</h3>
+        </div>
+        <div class="projects-container">
+            <div class="project-card glass">
+                <div class="modal-badge">Microservices</div>
+                <h4>Vaccinator Platform</h4>
+                <p>Engineered a high-concurrency 3-tier microservice architecture using Node.js, Express, and React.
+                    Implemented WebSocket-based real-time data feeds for scalable vaccination tracking.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">WebSockets</span>
+                    <span class="tech-tag">Express.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                </div>
+            </div>
+            <div class="project-card glass">
+                <div class="modal-badge">Machine Learning</div>
+                <h4>Sentiment Transformer (Google BERT)</h4>
+                <p>Leveraged the Google BERT transformer architecture to process 1M+ Amazon product reviews, achieving a
+                    validated 86% accuracy in assigned ratings and sentiment mapping.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">PyTorch</span>
+                    <span class="tech-tag">Google BERT</span>
+                    <span class="tech-tag">NLP</span>
+                </div>
+            </div>
+            <div class="project-card glass">
+                <div class="modal-badge">Computer Vision</div>
+                <h4>COVID-19 X-Ray Classifier</h4>
+                <p>Designed a Deep Learning pipeline using the VGG-19 architecture to classify COVID-19 status from
+                    medical imagery, reaching a 91.5% accuracy rate for clinical decision support.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Deep Learning</span>
+                    <span class="tech-tag">VGG-19</span>
+                    <span class="tech-tag">Keras</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Timeline -->
+    <section id="education" class="education-section">
+        <div class="section-header">
+            <h2 class="badge">Academic Journey</h2>
+            <h3>Foundation of Excellence</h3>
+        </div>
+        <div class="edu-timeline">
+            <div class="edu-item">
+                <div class="modal-badge">Master of Science</div>
+                <h4>University at Albany, SUNY</h4>
+                <div class="modal-meta">Dec 2023 | GPA: 3.97 / 4.0</div>
+                <p>Concentration in Distributed Systems and High-Performance ML. Awarded Dean's Merit Scholarship for
+                    exceptional academic standing.</p>
+            </div>
+            <div class="edu-item">
+                <div class="modal-badge">Bachelor of Technology</div>
+                <h4>Nirma University</h4>
+                <div class="modal-meta">Jun 2022 | Ahmedabad, India</div>
+                <p>Graduated with a Bachelor's in CS & Engineering (7.93/10.0 CGPA). Focused on Backend Systems and
+                    Competitive Algorithms.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements & Certifications -->
+    <section class="achievements-section">
+        <div class="section-header">
+            <h2 class="badge">Accolades</h2>
+            <h3>The Signal for Impact</h3>
+        </div>
+        <div class="achievements-grid">
+            <div class="achievement-pill glass">
+                <i class="fas fa-trophy" style="color: gold;"></i>
+                <div>
+                    <strong>Kaggle Global Rank #82nd</strong>
+                    <p>Plant-Pathology-2021 World Competition</p>
+                </div>
+            </div>
+            <div class="achievement-pill glass">
+                <i class="fas fa-feather-pointed" style="color: var(--google-blue);"></i>
+                <div>
+                    <strong>Published Technical Author</strong>
+                    <p>"Running Median" on GeeksforGeeks</p>
+                </div>
+            </div>
+            <div class="achievement-pill glass">
+                <i class="fas fa-award" style="color: var(--google-blue);"></i>
+                <div>
+                    <strong>PRL State Rank #48th</strong>
+                    <p>Gujarat Physical Research Laboratory Exam</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="certifications-grid"
+            style="margin-top: 3rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+            <span class="tech-tag">UC Santa Cruz: C++ Professional</span>
+            <span class="tech-tag">JPMorgan: Software Engineering Virtual Exp</span>
+            <span class="tech-tag">Hackerrank: Python Expert (Basic)</span>
+            <span class="tech-tag">Hackerrank: Problem Solving (Basic)</span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2 class="badge">Engagement</h2>
+            <h3>Let's Build the Future</h3>
+        </div>
+        <div class="contact-card glass">
+            <div class="contact-info-grid">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info-text">
+                        <span>Email Dispatch</span>
+                        <strong>het30401@gmail.com</strong>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="info-text">
+                        <span>Voice / Signal</span>
+                        <strong>+1 (518) 330-7379</strong>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-linkedin-in"></i>
+                    <div class="info-text">
+                        <span>Professional Link</span>
+                        <strong>linkedin.com/in/het-patel</strong>
+                    </div>
+                </div>
+            </div>
+            <p class="contact-footer">Based in New York // Available for Global Opportunities</p>
+        </div>
+    </section>
+
+    <!-- Full-Screen Experience Modal -->
+    <div id="experience-modal" class="modal-overlay hidden">
+        <div class="modal-content glass">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <div class="modal-badge" id="modal-company-badge">Goldman Sachs</div>
+                <h2 id="modal-title">Software Engineer</h2>
+                <div class="modal-meta" id="modal-date-location">Jan 2024 - Present | New York, NY</div>
+            </div>
+            <div class="modal-body" id="modal-description">
+                <!-- Content Injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Het Patel. Built for Performance & Impact. <a href="https://github.com/FutureHet"
+                target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
+    </footer>
+
+    <!-- Three.js & TWEEN CDN -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/20.0.0/tween.umd.js"></script>
+    <script src="engine.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
